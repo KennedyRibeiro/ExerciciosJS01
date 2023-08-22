@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" data-bs-theme="light">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Avaliação Mensal 1º Bimestre</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="container mt-4">
+
+		<h1 class="text-center mb-4">Avaliação Mensal 1º Bimestre</h1>
+
+		<!-- Questão 1 - Concatenar Valores -->
+		<div class="container questao-1">
+			<hr class="mt-4" />
+			<h2>Questão 1 - Concatenar Valores</h2>
+			<hr class="mb-4" />
+			<form action="" class="row">
+				<div class="col-md-6">
+					<label for="nome">Nome:</label>
+					<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+				</div>
+				<div class="col-md-6">
+					<label for="profissao">Profissão:</label>
+					<select name="profissao" id="profissao" class="form-select">
+						<option value="">Selecione uma opção</option>
+						<option value="engenheiro-civil">Engenheiro Civil</option>
+						<option value="analista-sistemas">Analista de Sistemas</option>
+						<option value="administrador">Administrador</option>
+					</select>
+				</div>
+			</form>
+			<div class="col-md-12 mt-4">
+				<button onclick="concatenarValores()" class="btn btn-success">Concatenar valores</button>
+			</div>
+			<div class="input-group mt-4">
+				<div class="input-group-text">Concatenação:</div>
+				<input   type="text" class="form-control" id="resultado-concatenacao" disabled readonly />
+			</div>
+			<br />
+		</div>
+
+		<!-- Questão 2 - Situação do aluno -->
+		<div class="container exercicio-3 mt-4">
+			<hr class="mt-4" />
+			<h2>Questão 2 - Situação do aluno</h2>
+			<hr class="mb-4" />
+			<form action="" class="row">
+				<div class="col-md-6">
+					<label for="nome-aluno">Nome do aluno:</label>
+					<input type="text" class="form-control" id="nome-aluno" name="nome-aluno" placeholder="Nome do aluno">
+				</div>
+				<div class="col-md-3">
+					<label for="nota1">Nota 1:</label>
+					<input type="number" class="form-control" id="nota1" name="nota1" placeholder="Nota 1">
+				</div>
+				<div class="col-md-3">
+					<label for="nota2">Nota 2:</label>
+					<input type="number" class="form-control" id="nota2" name="nota2" placeholder="Nota 2">
+				</div>
+			</form>
+			<div class="col-md-12 mt-4">
+				<button onclick="verificarSituacaoAluno()" class="btn btn-success">Verificar situação</button>
+			</div>
+			<div class="input-group mt-4">
+				<div class="input-group-text">Situação do aluno:</div>
+				<input type="text" class="form-control" id="resultado-situacao-aluno" disabled readonly />
+			</div>
+			<br />
+		</div>
+
+		<!-- Questão 3 - Verificador de idade -->
+		<div class="container exercicio-4 mt-4">
+			<hr class="mt-4" />
+			<h2>Questão 3 - Verificador de idade</h2>
+			<hr class="mb-4" />
+			<form action="" class="row">
+				<div class="col-md-5">
+					<label for="idade">Idade do usuário:</label>
+					<input type="number" class="form-control" id="idade" name="idade"
+						placeholder="Idade do usuário">
+				</div>
+			</form>
+			<div class="col-md-12 mt-4">
+				<button onclick="verificarIdade()" class="btn btn-success">Verificar idade</button>
+			</div>
+			<div class="input-group mt-4">
+				<div class="input-group-text">Resultado da verificação:</div>
+				<input type="text" class="form-control" id="resultado-verificacao" disabled readonly />
+			</div>
+			<br />
+		</div>
+	</div>
+
+	<script src="../js/index.js"></script>
+</body>
+
+</html>
